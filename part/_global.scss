@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100&family=Yeseva+One&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font: {
+        family: $font2;
+        size: 16px;
+    }
+    color: $color3_gray;
+    line-height: 1.18em;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+
+    @media screen and (max-width: $tablet){
+        max-width: 648px;
+    }
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+

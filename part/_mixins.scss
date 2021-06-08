@@ -1,0 +1,32 @@
+@mixin section($height) {
+    padding: 100px 0;
+    min-height: $height;
+}
+
+@mixin section_picture($url){
+    background: {
+        image: url($url);
+        repeat: no-repeat;
+        position: center top;
+        size: cover;
+    }
+}
+
+%heading {
+    font: {
+        family: $fonts1;
+        size: 36px;
+    }
+}
+
+@mixin tablet {
+    @media screen and(max-width:768px) {
+        @content;
+    }
+}
+
+@mixin phone {
+    @media screen and(max-width:520px) {
+        @content;
+    }
+}

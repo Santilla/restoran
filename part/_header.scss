@@ -1,0 +1,4 @@
+.header{
+    @include section(750px);
+    @include section_picture('images/header.jpg');
+}
