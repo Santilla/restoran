@@ -12,12 +12,20 @@
     }
 }
 
-%heading {
-    font: {
-        family: $fonts1;
-        size: 36px;
+@mixin heading($c, $p, $s) {
+    font-family: $fonts1;
+    font-size: $s;
+    text-align: center;
+    color: $c;
+
+    &::after{
+        content: url($p);
+        display: block;
+        margin: 24px auto;
     }
 }
+
+
 
 @mixin tablet {
     @media screen and(max-width:768px) {
@@ -26,7 +34,16 @@
 }
 
 @mixin phone {
-    @media screen and(max-width:520px) {
+    @media screen and(max-width:512px) {
         @content;
     }
 }
+
+@mixin ipad {
+    @media screen and(max-width:1160px) {
+        @content;
+    }
+}
+
+
+

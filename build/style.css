@@ -8,13 +8,14 @@ body {
   font-family: "Lato", sans-serif;
   font-size: 16px;
   color: #4C4C4C;
-  line-height: 1.18em; }
+  line-height: 1.8em; }
 
 .container {
   width: 90%;
   max-width: 1200px;
   margin: 0 auto;
-  display: flex; }
+  display: flex;
+  justify-content: space-between; }
   @media screen and (max-width: 768px) {
     .container {
       max-width: 648px; } }
@@ -30,5 +31,309 @@ a {
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover; }
+  .header .container {
+    flex-direction: column; }
+  .header__text {
+    font-size: 70px;
+    text-align: center;
+    line-height: 1.5em;
+    font-family: "Yeseva One", sans-serif;
+    color: #fff;
+    letter-spacing: 3px;
+    text-shadow: 2px 2px 5px #000000; }
+  .header__text::after {
+    content: url(images/before_white.png);
+    display: block;
+    margin-top: 58px; }
+  .header__menu {
+    display: flex;
+    justify-content: center;
+    margin-top: 64px; }
+    @media screen and (max-width: 512px) {
+      .header__menu {
+        flex-direction: column;
+        align-items: center; } }
+    @media screen and (max-width: 768px) {
+      .header__menu {
+        flex-direction: column;
+        align-items: center; } }
+    .header__menu .menu__item {
+      height: 80px;
+      border: 1px solid #fff;
+      width: 250px;
+      margin: 0 17px;
+      font-size: 18px;
+      text-align: center;
+      color: #fff;
+      line-height: 80px;
+      background-color: rgba(255, 255, 255, 0.63); }
+      @media screen and (max-width: 768px) {
+        .header__menu .menu__item {
+          margin-bottom: 37px; } }
+
+.about {
+  padding: 100px 0;
+  min-height: 750px;
+  padding: 100px 0;
+  background-image: linear-gradient(to left, #F4F2F2, #fff), url("images/pattern.jpg");
+  background-blend-mode: hard-light;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1); }
+  .about__text {
+    display: flex;
+    flex-direction: column;
+    max-width: 45%;
+    text-align: center; }
+    @media screen and (max-width: 1160px) {
+      .about__text {
+        justify-content: center;
+        max-width: 100%; } }
+  .about h2 {
+    font-family: "Yeseva One", sans-serif;
+    font-size: 36px;
+    text-align: center;
+    color: #CC9900; }
+    .about h2::after {
+      content: url("images/before_gold.png");
+      display: block;
+      margin: 24px auto; }
+  .about .text__picture {
+    background-image: url(images/text_image.png);
+    background-size: cover;
+    height: 289px;
+    width: 292px;
+    margin-top: 30px;
+    margin-left: 166px; }
+  .about__picture {
+    width: 40%;
+    background-size: cover; }
+    @media screen and (max-width: 1160px) {
+      .about__picture {
+        display: none; } }
+
+.ingredients {
+  padding: 100px 0;
+  min-height: 750px;
+  background-image: url("images/ingredients.jpg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover; }
+  .ingredients .container {
+    justify-content: flex-end;
+    color: #fff;
+    text-align: center; }
+  .ingredients__content {
+    background-color: rgba(0, 0, 0, 0.8);
+    max-width: 60%; }
+    @media screen and (max-width: 1160px) {
+      .ingredients__content {
+        justify-content: center;
+        max-width: 100%; } }
+  .ingredients h2 {
+    font-family: "Yeseva One", sans-serif;
+    font-size: 36px;
+    text-align: center;
+    color: #fff;
+    margin-top: 50px; }
+    .ingredients h2::after {
+      content: url("images/after_white.png");
+      display: block;
+      margin: 24px auto; }
+  .ingredients__text {
+    padding: 0 80px; }
+    @media screen and (max-width: 1160px) {
+      .ingredients__text {
+        padding: 0 40px; } }
+  .ingredients__items {
+    display: flex;
+    margin-top: 50px;
+    margin-bottom: 70px;
+    justify-content: center; }
+  .ingredients__item {
+    border: 5px solid rgba(204, 153, 0, 0.5);
+    border-radius: 50%;
+    margin: 0 14px;
+    width: 114px;
+    height: 114px;
+    overflow: hidden; }
+    .ingredients__item img {
+      display: block;
+      transform: translate(-10px, -20%); }
+
+.menu {
+  padding: 100px 0;
+  min-height: 750px;
+  background-image: linear-gradient(to right, #F3F1F1, #fff), url("images/pattern.png");
+  background-blend-mode: hard-light;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1); }
+  @media screen and (max-width: 768px) {
+    .menu .container {
+      flex-direction: column; } }
+  .menu .column {
+    width: 40%; }
+    @media screen and (max-width: 768px) {
+      .menu .column {
+        width: 100%; } }
+  .menu h2 {
+    font-family: "Yeseva One", sans-serif;
+    font-size: 36px;
+    text-align: center;
+    color: #CC9900;
+    margin-bottom: 10px; }
+    .menu h2::after {
+      content: url("images/before_gold.png");
+      display: block;
+      margin: 24px auto; }
+  .menu ul {
+    list-style-type: none; }
+  .menu__name, .menu__price {
+    font-family: "Yeseva One", sans-serif;
+    font-size: 21px;
+    color: #C89F2D; }
+  .menu__title {
+    border-bottom: 1px solid #CC9900;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 7px; }
+  .menu__discription {
+    margin-bottom: 43px; }
+
+.reviews {
+  padding: 100px 0;
+  min-height: 750px;
+  background-image: url("images/review.jpg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+  background-size: cover;
+  min-height: 750px;
+  background-position: center;
+  color: #fff; }
+  .reviews .container {
+    justify-content: center; }
+  .reviews__content {
+    max-width: 70%;
+    background-color: rgba(0, 0, 0, 0.8);
+    font-family: "Yeseva One", sans-serif;
+    text-align: center; }
+    @media screen and (max-width: 1160px) {
+      .reviews__content {
+        max-width: 100%; } }
+  .reviews h2 {
+    margin: 65px 0;
+    font-size: 36px; }
+  .reviews p {
+    display: block;
+    margin: 0 80px;
+    font-size: 20px;
+    line-height: 36px; }
+  .reviews span {
+    display: block;
+    margin: 70px 0; }
+
+.reservation {
+  padding: 100px 0;
+  min-height: 750px; }
+  .reservation__images {
+    display: flex;
+    flex-direction: row;
+    max-width: 40%; }
+    @media screen and (max-width: 1160px) {
+      .reservation__images {
+        display: none; } }
+  .reservation__image {
+    margin: 0px 15px; }
+  .reservation__text {
+    max-width: 40%; }
+    @media screen and (max-width: 1160px) {
+      .reservation__text {
+        max-width: 100%; } }
+  .reservation h2 {
+    font-family: "Yeseva One", sans-serif;
+    font-size: 36px;
+    text-align: center;
+    color: #CC9900; }
+    .reservation h2::after {
+      content: url("images/before_gold.png");
+      display: block;
+      margin: 24px auto; }
+  .reservation p {
+    color: #000;
+    text-align: center;
+    line-height: 29px; }
+  .reservation .form {
+    display: flex;
+    flex-direction: column;
+    width: 46%;
+    text-align: left;
+    margin: 20px 0; }
+    .reservation .form label {
+      font-family: "Yeseva One", sans-serif;
+      font-size: 14px;
+      color: #CC9900; }
+    .reservation .form input {
+      width: 80%;
+      height: 36px;
+      border: solid #4C4C4C 1px;
+      padding: 5px;
+      font-style: italic; }
+      @media screen and (max-width: 1160px) {
+        .reservation .form input {
+          width: 60%; } }
+    .reservation .form input:hover {
+      border: solid #CC9900 1px; }
+  .reservation .button {
+    margin: auto; }
+  .reservation__form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; }
+    @media screen and (max-width: 768px) {
+      .reservation__form {
+        margin-left: 70px; } }
+  .reservation button {
+    width: 190px;
+    height: 36px;
+    background-color: #CC9900;
+    color: #fff;
+    margin-top: 20px;
+    border: none; }
+    @media screen and (max-width: 1160px) {
+      .reservation button {
+        margin-left: -88px; } }
+  .reservation button:hover {
+    background-color: #4C4C4C; }
+
+.footer {
+  padding: 100px 0;
+  min-height: 375px;
+  background-color: #000;
+  color: #fff; }
+  .footer__items {
+    display: flex;
+    text-align: center;
+    justify-content: space-between; }
+    @media screen and (max-width: 768px) {
+      .footer__items {
+        flex-direction: column; } }
+  .footer__item {
+    max-width: 30%; }
+    @media screen and (max-width: 768px) {
+      .footer__item {
+        max-width: 100%; } }
+  .footer img {
+    margin-top: 20px; }
+  .footer h2 {
+    font-family: "Yeseva One", sans-serif;
+    font-size: 21px;
+    text-align: center;
+    color: #fff; }
+    @media screen and (max-width: 768px) {
+      .footer h2 {
+        margin-top: 20px; } }
+    .footer h2::after {
+      content: url("images/after_white.png");
+      display: block;
+      margin: 24px auto; }
 
 /*# sourceMappingURL=style.css.map */

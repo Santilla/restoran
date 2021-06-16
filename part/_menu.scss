@@ -1,0 +1,44 @@
+.menu{
+    @include section(750px);
+    background-image: linear-gradient(to right, #F3F1F1, #fff), url("images/pattern.png");
+    background-blend-mode: hard-light;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1);
+    
+
+    .container{
+        @include tablet{
+            flex-direction: column;
+        }
+    }
+        
+    .column{
+        @include tablet{
+            width: 100%;
+        }
+        width: 40%;
+    }
+
+    h2{
+        @include heading ($color2_mustard, 'images/before_gold.png', 36px);
+        margin-bottom: 10px;
+    }
+    ul{
+    list-style-type: none;
+}
+&__name,&__price{
+    font-family: $fonts1;
+    font-size: 21px;
+    color:$color4_mustard_light;
+}
+&__title{
+    border-bottom: 1px solid $color2_mustard;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 7px;
+    
+}
+&__discription{
+    margin-bottom: 43px ;    
+}
+}   

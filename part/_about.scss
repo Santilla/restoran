@@ -1,0 +1,47 @@
+.about{
+    @include section(750px);
+    padding: 100px 0;
+    background-image: linear-gradient(to left, #F4F2F2, #fff), url("images/pattern.jpg");
+  background-blend-mode: hard-light;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1);
+
+    
+
+    &__text {
+        @include ipad{
+            justify-content: center;
+            max-width: 100%;
+
+        }
+        display: flex;
+        flex-direction: column;
+        max-width: 45%;
+        text-align: center;
+    }
+
+    h2{
+        @include heading ($color2_mustard, 'images/before_gold.png', 36px)
+    }
+
+    .text__picture{
+        background-image: url(images/text_image.png);
+        background-size: cover;
+         height: 289px;
+        width: 292px;
+        margin-top: 30px;
+        margin-left: 166px;
+        
+        
+    
+    }
+
+    &__picture {
+        @include ipad{
+            display: none;
+        }
+        width: 40%;
+        background-size: cover;
+        
+    }
+    
+}

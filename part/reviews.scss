@@ -1,0 +1,40 @@
+.reviews{
+    @include section(750px);
+    @include section_picture('images/review.jpg');
+    background-size: cover;
+    min-height: 750px;
+    background-position: center;
+    color: $color1_white;
+
+    .container{
+        justify-content: center;
+        
+    }
+
+    &__content{
+        @include ipad{
+            max-width: 100%;
+        }
+        max-width: 70%;
+        background-color:rgba(0, 0, 0, 0.8);
+        font-family: $fonts1;
+        text-align: center;
+        
+    }
+
+    h2{
+        margin: 65px 0;
+        
+        font-size: 36px;
+    }
+    p{
+        display: block;
+        margin:0 80px;
+        font-size: 20px;
+        line-height: 36px;
+    }
+    span{
+        display: block;
+        margin: 70px 0;
+    }
+}

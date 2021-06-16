@@ -1,0 +1,97 @@
+.reservation{
+    @include section(750px);
+
+    
+
+    &__images{
+        @include ipad {
+            display: none;
+        }
+        display: flex;
+        flex-direction: row;
+        max-width: 40%;
+        
+}
+    &__image{
+        margin: 0px 15px;
+    }
+
+    &__text{
+        @include ipad{
+            max-width: 100%;
+        }
+        max-width: 40%;
+    }
+
+    h2{
+        @include heading ($color2_mustard, 'images/before_gold.png', 36px)
+    }
+
+    p{
+        color: #000;
+        text-align: center;
+        line-height: 29px;
+    }
+
+    .form {
+        
+        display: flex;
+        flex-direction: column;
+        width: 46%;
+        text-align: left;
+        margin: 20px 0;
+
+        label {
+            font-family: $fonts1;
+            font-size: 14px;
+            color: $color2_mustard
+        }
+
+        input {
+            @include ipad{
+                width: 60%;
+            }
+            width: 80%;
+            height: 36px;
+            border: solid $color3_gray 1px;
+            padding: 5px;
+            font-style: italic;    
+
+        }
+
+        input:hover {
+            border: solid $color2_mustard 1px;
+        }
+    }
+
+    .button {
+        margin: auto;
+        
+    }
+
+    &__form{
+        @include tablet{
+            margin-left: 70px;
+        }
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    button {
+        @include ipad{
+            margin-left: -88px;
+        }
+        width: 190px;
+        height: 36px;
+        background-color: $color2_mustard;
+        color: $color1_white;
+        margin-top: 20px;
+        border: none;
+        
+    }
+
+    button:hover {
+        background-color: $color3_gray;
+    }
+}
